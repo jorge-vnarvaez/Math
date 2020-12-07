@@ -1,0 +1,25 @@
+---- Requerimiento funcional. ----
+
+** La aplicación deberá generar los ejercicios al azar para el caso de las funciones cuadráticas.
+
+
+
+---- Requerimiento no funcional. ----
+
+** Debe ser en un card panel atractivo. 
+
+** Debe tener un boton para refrescar las ecuaciones
+
+** Los soluciones deben aparecer en color rojo.
+
+
+
+---- Anotaciones generales de desarrollo. ----
+
+Tomar 2 formulas de internet, resolverlas por cuenta propia, comparar resultados y ver el analisis de cuales son los posibles resultados.
+
+Lo más probable es que deba cambiar el valor de los parrafos que contengan los enteros en la formula.
+
+En un principio se puede generar con html y js, la idea es que  el boton "ver solucion" sea capaz de resolver la ecuacion con una funcion escrita en javascript.
+
+Por el momento es necesario hacer pruebas por consola y a futuro implementar la interfaz para asegurar calidad.

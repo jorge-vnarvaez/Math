@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>Cuadrática.</title>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,700,900&display=swap" rel="stylesheet">
+
+	<link type="text/css" rel="stylesheet" href="css/estilo.css" />
+
+	<!-- Importa normalize.css -->
+	<link type="text/css" rel="stylesheet" href="css/normalize.css" media="screen,projection" />
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+	<nav class="cyan darken-4">
+		<div class="nav-wrapper">
+			<a href="index.html" class="brand-logo center">Matemáticas</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="index.html">Otras funciones</a></li>
+				<li><a href="#">Quiénes somos</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main>
+		<div class="container">
+			<div class="section">
+				<div class="row">
+					<div class="col s12 m5 l12">
+						<div class="card-panel">
+							<div class="card-title">
+								<h4>Resuelva la siguiente función cuadrática y luego compare resultados.</h4>
+							</div>
+							<div class="row">
+								<div class="col l4">
+									<h5>
+										<span id="signo_0"></span>
+										<span id="a"></span>x<sup>2</sup>
+										<span id="signo_1">+</span>
+										<span id="b"></span>x
+										<span id="signo_2">-</span>
+										<span id="c"></span> = 0
+									</h5>
+								</div>
+
+							</div>
+
+							<!-- Oculta los elementos que permitirán mostrar la solucion #1 -->
+							<div class="row">
+								<div class="col l2">
+									<p hidden id="p_sol_1">Solucion 1: <span class="red-text" id="sol_1"></span></p>
+								</div>
+							</div>
+
+							<!-- Oculta los elementos que permitirán mostrar la solucion #2 -->
+							<div class="row">
+								<div class="col l2">
+									<p hidden id="p_sol_2">Solucion 2: <span class="red-text" id="sol_2"></span></p>
+								</div>
+							</div>
+
+							<!-- Por el momento se comenta esta linea ya que el discriminante
+						debe considerar un calculo exacto en cuanto a si es raiz o un numero real.  
+					<div class="row">
+					  <div class="col l6">
+						  <p hidden id="dis">Discriminante: <span class="red-text" id="disc"></span></p>
+						</div>
+					</div>
+					-->
+
+							<div class="row">
+								<!-- Permite escribir una nueva función cuadratica -->
+								<div class="col s8 m5 l2">
+									<button class="waves-effect waves-light btn cyan darken-4"
+										onclick='writeFunction()'>Resfrecar</button>
+								</div>
+
+								<!-- Obtiene y escribe la solución correspondiente a la función
+									 desplegada -->
+								<div class="col s8 m5 l2">
+									<button class="waves-effect waves-light btn cyan darken-1"
+										onclick="verSoluciones()">Ver
+										solucion</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+
+
+	</footer>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/loadFunction.js"></script>
+	<script type="text/javascript" src="js/elements.js"></script>
+</body>
+
+</html>
